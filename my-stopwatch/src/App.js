@@ -12,7 +12,7 @@ function App() {
       }, 1000);
     }
     return () => {
-      if (intervalId) clearInterval(intervalId); // Clear the interval if it exists.
+      if (intervalId) clearInterval(intervalId); 
     };
   }, [isRunning]);
   
@@ -34,7 +34,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>STOPWATCH</h1>
+      <h1>Stopwatch</h1>
       <p>Time: {formatTime(elapsedTime)}</p>
       <button onClick={startstop}>{isRunning? "Stop": "Start"}</button>
       <button onClick={reset}>Reset</button>
